@@ -1,50 +1,85 @@
-# Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
-name = "RMK Keyboard"
-product_name = "RMK Keyboard"
-vendor_id = 0x4c4b
-product_id = 0x4643
-manufacturer = "haobo"
-chip = "rp2040"
+name = "Kabarga RMK"
+product_name = "Kabarga RMK"
+vendor_id = 0x2c3b
+product_id = 0x5423
+manufacturer = "aroum"
+board = "nice!nano_v2"
 
 [matrix]
 # Input and output pins are mandatory
-input_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-output_pins = ["PIN_19", "PIN_20", "PIN_21"]
-# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
+output_pins = ["P1_06", "P1_04", "P0_11", "P1_00", "P0_24", "P0_22"] # cols
+input_pins = ["P0_08", "P0_20", "P0_17", "P0_31", "P0_29", "P0_02", "P1_15"] #rows
+# WARNING: Currently row2col/col2row is set in RMK's feature gate, row2col config here is valid ONLY when you're using cloud compilation
 # row2col = true
 
 [layout]
-rows = 4
-cols = 3
-layers = 2
+# Number of rows. For split keyboard, this is the total rows contains all splits
+rows = 7
+# Number of cols. For split keyboard, this is the total cols contains all splits
+cols = 6
+# Number of layers. Be careful, since large layer number takes more flash and RAM
+layers = 4
+# Default keymap definition, the size should be consist with rows/cols
+# Empty layers will be used to fill if the number of layers set in default keymap is less than `layers` setting
 keymap = [
     [
-        ["A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
+        ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5"],
+        ["Tab", "Q", "W", "E", "R", "T"],
+        ["CapsLock", "A", "S", "D", "F", "G"],
+        ["LShift", "Z", "X", "C", "V", "B"],
+        ["LCtrl", "LGui", "LAlt", "Space", "MO(1)", "Left"],
+        ["Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus"],
+        ["Y", "U", "I", "O", "P", "LeftBracket"]
     ],
     [
-        ["_", "TT(1)", "TG(2)"],
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "_", "_"]
+        ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5"],
+        ["Tab", "Q", "W", "E", "R", "T"],
+        ["CapsLock", "A", "S", "D", "F", "G"],
+        ["LShift", "Z", "X", "C", "V", "B"],
+        ["LCtrl", "LGui", "LAlt", "Space", "MO(1)", "Left"],
+        ["Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus"],
+        ["Y", "U", "I", "O", "P", "LeftBracket"]
     ],
+    [
+        ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5"],
+        ["Tab", "Q", "W", "E", "R", "T"],
+        ["CapsLock", "A", "S", "D", "F", "G"],
+        ["LShift", "Z", "X", "C", "V", "B"],
+        ["LCtrl", "LGui", "LAlt", "Space", "MO(1)", "Left"],
+        ["Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus"],
+        ["Y", "U", "I", "O", "P", "LeftBracket"]
+    ],
+    [
+        ["Equal", "Backspace", "RightBracket", "Backslash", "Semicolon", "Quote"],
+        ["H", "J", "K", "L", "Enter", "Comma"],
+        ["N", "M", "Dot", "Slash", "UP", "Down"],
+        ["Right", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5"],
+        ["Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus"],
+        ["Equal", "Backspace", "RightBracket", "Backslash", "Semicolon", "Quote"],
+        ["Enter", "Comma", "Dot", "Slash", "UP", "Down"]
+    ]
 ]
 
-[light]
-# All light pins are high-active by default, uncomment if you want it to be low-active
-# capslock.pin = "PB2"
+# [light]
+# # All light pins are high-active by default, uncomment if you want it to be low-active
+# capslock.pin = "P1_11"
 # capslock.low_active = true
 # scrolllock.pin = "PA3"
 # scrolllock.low_active = true
 # Just ignore if no light pin is used for it
-# numslock.pin = "PA5"
+# numslock.pin = "P0_10"
 # numslock.low_active = true
-
-
 
 [storage]
 # Storage feature is enabled by default
-# enabled = false
+enabled = true
+num_sectors = 32
+clear_storage = false
+
+
+[ble]
+enabled = true
+# vddh has an internal voltage divider
+battery_adc_pin = "vddh"
+# charge_led = { pin = "P1_13", low_active = true }
