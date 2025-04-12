@@ -81,4 +81,4 @@ clear_storage = false
 enabled = true
 # vddh has an internal voltage divider
 battery_adc_pin = "vddh"
-charge_led = { pin = "P1_13", low_active = true }
+# charge_led = { pin = "P1_13", low_active = true }
