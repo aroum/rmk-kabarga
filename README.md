@@ -14,18 +14,14 @@ The keymap defined in the config is currently incorrect. Due to RMK's current li
 
 ## Feature Support Table
 
-| Feature                 | Status  |
-|------------------------|---------|
-| USB                    | ✅      |
-| Bluetooth              | ✅      |
-| Vial over USB          | ✅      |
-| Vial over Bluetooth    | ✅      |
-| LED Indication         | ❌      |
-
-
-## Notes
-
-
+| Feature             | Status |
+| ------------------- | ------ |
+| USB                 | ✅     |
+| Bluetooth           | ✅     |
+| Vial over USB       | ✅     |
+| Vial over Bluetooth | ✅     |
+| LED Indication      | ❌     |
+| RGB                 | ❌     |
 
 ## Acknowledgements
 
