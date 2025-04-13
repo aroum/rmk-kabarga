@@ -4,7 +4,7 @@ This is a configuration repository for the Kabarga keyboard using the RMK firmwa
 
 > ⚠️ This is a **demo version** of the config and currently supports only the **Kabarga CE** variant.
 
-The keymap defined in the config is currently incorrect. Due to RMK's current limitations in matrix transformation, layout configuration should be done directly in **Vial**.
+The keymap defined in the config is currently incorrect. Due to RMK's current limitations in matrix transformation, layout configuration should be done directly in **Vial**. 
 
 ## Links
 
