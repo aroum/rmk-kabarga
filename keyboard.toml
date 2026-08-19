@@ -57,6 +57,11 @@ keymap = [
     ]
 ]
 
+[light]
+numslock = { pin = "P1_11", low_active = true }
+capslock = { pin = "P0_10", low_active = true }
+scrolllock = { pin = "P0_09", low_active = true }
+
 [storage]
 enabled = true
 

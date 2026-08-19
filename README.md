@@ -4,7 +4,7 @@ This is a configuration repository for the Kabarga keyboard using the RMK firmwa
 
 > ⚠️ This is a **demo version** of the config and currently supports only the **Kabarga CE** variant.
 
-The keymap defined in the config is currently a baseline placeholder. Due to matrix transformation details, full layout configuration is recommended to be done directly in **Vial**. 
+The keymap defined in the config is currently a baseline placeholder. Due to matrix transformation details, full layout configuration is recommended to be done directly in **Vial**.
 
 ## Vial Unlock Combo
 
@@ -20,12 +20,19 @@ To unlock layout editing in **Vial**, press the **`Escape`** and **`5`** keys si
 
 | Feature             | Status |
 | ------------------- | ------ |
-| USB                 | ✅     |
-| Bluetooth           | ✅     |
-| Vial over USB       | ✅     |
-| Vial over Bluetooth | ✅     |
-| LED Indication      | ❌     |
-| RGB                 | ❌     |
+| USB                 | ✅      |
+| Bluetooth           | ✅      |
+| Vial over USB       | ✅      |
+| Vial over Bluetooth | ✅      |
+| LED Indication      | ✅      |
+| RGB                 | ❌      |
+
+| LED # | Pin   | Function    |
+| ----- | ----- | ----------- |
+| 0     | P1_13 | Charge      |
+| 1     | P1_11 | Num Lock    |
+| 2     | P0_10 | Caps Lock   |
+| 3     | P0_09 | Scroll Lock |
 
 ## Acknowledgements
 
