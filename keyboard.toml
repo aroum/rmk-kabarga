@@ -5,7 +5,7 @@ product_name = "Kabarga RMK"
 vendor_id = 0x2c3b
 product_id = 0x5423
 manufacturer = "aroum"
-board = "nice!nano_v2"
+chip = "nrf52840"
 
 [matrix]
 row_pins = ["P0_08", "P0_20", "P0_17", "P0_31", "P0_29", "P0_02", "P1_15"]
