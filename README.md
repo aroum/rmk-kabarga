@@ -4,11 +4,11 @@ This is a configuration repository for the Kabarga keyboard using the RMK firmwa
 
 > ⚠️ This is a **demo version** of the config and currently supports only the **Kabarga CE** variant.
 
-The keymap defined in the config is currently incorrect. Due to RMK's current limitations in matrix transformation, layout configuration should be done directly in **Vial**. 
+The keymap defined in the config is currently a baseline placeholder. Due to matrix transformation details, full layout configuration is recommended to be done directly in **Vial**. 
 
 ## Links
 
-- [Official RMK Documentation](https://haobogu.github.io/rmk/)  
+- [Official RMK Documentation](https://rmk.rs/)  
 - [Kabarga Hardware Repository](https://github.com/aroum/kabarga)  
 - [ZMK Firmware Config](https://github.com/aroum/zmk-kabarga)  
 
@@ -25,7 +25,7 @@ The keymap defined in the config is currently incorrect. Due to RMK's current li
 
 ## Acknowledgements
 
-Special thanks to everyone who helped with this config::
+Special thanks to everyone who helped with this config:
 
 - [HaoboGu](https://github.com/HaoboGu)  
 - [stickpro](https://github.com/stickpro)  

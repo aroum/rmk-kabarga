@@ -1,3 +1,4 @@
+# Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
 name = "Kabarga RMK"
 product_name = "Kabarga RMK"
@@ -7,21 +8,13 @@ manufacturer = "aroum"
 board = "nice!nano_v2"
 
 [matrix]
-# Input and output pins are mandatory
-output_pins = ["P1_06", "P1_04", "P0_11", "P1_00", "P0_24", "P0_22"] # cols
-input_pins = ["P0_08", "P0_20", "P0_17", "P0_31", "P0_29", "P0_02", "P1_15"] #rows
-# WARNING: Currently row2col/col2row is set in RMK's feature gate, row2col config here is valid ONLY when you're using cloud compilation
-# row2col = true
+row_pins = ["P0_08", "P0_20", "P0_17", "P0_31", "P0_29", "P0_02", "P1_15"]
+col_pins = ["P1_06", "P1_04", "P0_11", "P1_00", "P0_24", "P0_22"]
 
 [layout]
-# Number of rows. For split keyboard, this is the total rows contains all splits
 rows = 7
-# Number of cols. For split keyboard, this is the total cols contains all splits
 cols = 6
-# Number of layers. Be careful, since large layer number takes more flash and RAM
 layers = 4
-# Default keymap definition, the size should be consist with rows/cols
-# Empty layers will be used to fill if the number of layers set in default keymap is less than `layers` setting
 keymap = [
     [
         ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5"],
@@ -61,24 +54,10 @@ keymap = [
     ]
 ]
 
-# [light]
-# # All light pins are high-active by default, uncomment if you want it to be low-active
-# capslock.pin = "P1_11"
-# capslock.low_active = true
-# scrolllock.pin = "PA3"
-# scrolllock.low_active = true
-# Just ignore if no light pin is used for it
-# numslock.pin = "P0_10"
-# numslock.low_active = true
-
 [storage]
-# Storage feature is enabled by default
 enabled = true
-num_sectors = 32
-clear_storage = false
 
 [ble]
 enabled = true
-# vddh has an internal voltage divider
 battery_adc_pin = "vddh"
 charge_led = { pin = "P1_13", low_active = true }
