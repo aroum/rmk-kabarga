@@ -6,6 +6,10 @@ This is a configuration repository for the Kabarga keyboard using the RMK firmwa
 
 The keymap defined in the config is currently a baseline placeholder. Due to matrix transformation details, full layout configuration is recommended to be done directly in **Vial**. 
 
+## Vial Unlock Combo
+
+To unlock layout editing in **Vial**, press the **`Escape`** and **`5`** keys simultaneously (matrix positions `[0, 0]` and `[0, 5]`).
+
 ## Links
 
 - [Official RMK Documentation](https://rmk.rs/)  
