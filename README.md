@@ -10,6 +10,17 @@ The keymap defined in the config is currently a baseline placeholder. Due to mat
 
 To unlock layout editing in **Vial**, press the **`Escape`** and **`5`** keys simultaneously (matrix positions `[0, 0]` and `[0, 5]`).
 
+## Bluetooth Controls
+
+Bluetooth profile controls are mapped on **Layer 1** (accessed via `MO(1)`):
+- **`1`**: Switch to Profile 0 (`BT0` / `User0`)
+- **`2`**: Switch to Profile 1 (`BT1` / `User1`)
+- **`3`**: Switch to Profile 2 (`BT2` / `User2`)
+- **`5`**: Clear current profile bonding (`Clear BT` / `User5`)
+- **`Tab`**: Toggle output mode between USB and Bluetooth (`Switch Output` / `User6`)
+
+> 💡 **In Vial GUI:** Bluetooth keycodes (`BT0`–`BT7`, `Next BT`, `Prev BT`, `Clear BT`, `Switch Output`) are also accessible under the **User** keycode tab in Vial and can be freely assigned to any key or layer.
+
 ## Links
 
 - [Official RMK Documentation](https://rmk.rs/)  

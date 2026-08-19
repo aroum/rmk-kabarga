@@ -14,11 +14,19 @@ unlock_keys = [[0, 0], [0, 5]]
 row_pins = ["P0_08", "P0_20", "P0_17", "P0_31", "P0_29", "P0_02", "P1_15"]
 col_pins = ["P1_06", "P1_04", "P0_11", "P1_00", "P0_24", "P0_22"]
 
+[aliases]
+bt0 = "User0"
+bt1 = "User1"
+bt2 = "User2"
+bt_clear = "User5"
+bt_switch = "User6"
+
 [layout]
 rows = 7
 cols = 6
 layers = 4
 keymap = [
+    # Layer 0: Base
     [
         ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5"],
         ["Tab", "Q", "W", "E", "R", "T"],
@@ -28,6 +36,17 @@ keymap = [
         ["Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus"],
         ["Y", "U", "I", "O", "P", "LeftBracket"]
     ],
+    # Layer 1: Fn / Bluetooth
+    [
+        ["Escape", "@bt0", "@bt1", "@bt2", "_", "@bt_clear"],
+        ["@bt_switch", "_", "_", "_", "_", "_"],
+        ["CapsLock", "A", "S", "D", "F", "G"],
+        ["LShift", "Z", "X", "C", "V", "B"],
+        ["LCtrl", "LGui", "LAlt", "Space", "MO(1)", "Left"],
+        ["Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus"],
+        ["Y", "U", "I", "O", "P", "LeftBracket"]
+    ],
+    # Layer 2
     [
         ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5"],
         ["Tab", "Q", "W", "E", "R", "T"],
@@ -37,15 +56,7 @@ keymap = [
         ["Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus"],
         ["Y", "U", "I", "O", "P", "LeftBracket"]
     ],
-    [
-        ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5"],
-        ["Tab", "Q", "W", "E", "R", "T"],
-        ["CapsLock", "A", "S", "D", "F", "G"],
-        ["LShift", "Z", "X", "C", "V", "B"],
-        ["LCtrl", "LGui", "LAlt", "Space", "MO(1)", "Left"],
-        ["Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus"],
-        ["Y", "U", "I", "O", "P", "LeftBracket"]
-    ],
+    # Layer 3
     [
         ["Equal", "Backspace", "RightBracket", "Backslash", "Semicolon", "Quote"],
         ["H", "J", "K", "L", "Enter", "Comma"],
