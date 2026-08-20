@@ -14,13 +14,6 @@ unlock_keys = [[0, 0], [0, 5]]
 row_pins = ["P0_08", "P0_20", "P0_17", "P0_31", "P0_29", "P0_02", "P1_15"]
 col_pins = ["P1_06", "P1_04", "P0_11", "P1_00", "P0_24", "P0_22"]
 
-[aliases]
-bt0 = "User0"
-bt1 = "User1"
-bt2 = "User2"
-bt_clear = "User5"
-bt_switch = "User6"
-
 [layout]
 rows = 7
 cols = 6
@@ -38,8 +31,8 @@ keymap = [
     ],
     # Layer 1: Fn / Bluetooth
     [
-        ["Escape", "@bt0", "@bt1", "@bt2", "_", "@bt_clear"],
-        ["@bt_switch", "_", "_", "_", "_", "_"],
+        ["Escape", "User0", "User1", "User2", "_", "User5"],
+        ["User6", "_", "_", "_", "_", "_"],
         ["CapsLock", "A", "S", "D", "F", "G"],
         ["LShift", "Z", "X", "C", "V", "B"],
         ["LCtrl", "LGui", "LAlt", "Space", "MO(1)", "Left"],
