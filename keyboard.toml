@@ -69,9 +69,9 @@ keymap = [
 ]
 
 [light]
-numslock = { pin = "P1_11", low_active = true }
-capslock = { pin = "P0_10", low_active = true }
-scrolllock = { pin = "P0_09", low_active = true }
+numslock = { pin = "P1_11", low_active = false }
+capslock = { pin = "P0_10", low_active = false }
+scrolllock = { pin = "P0_09", low_active = false }
 
 [storage]
 enabled = true
@@ -79,4 +79,4 @@ enabled = true
 [ble]
 enabled = true
 battery_adc_pin = "vddh"
-charge_led = { pin = "P1_13", low_active = true }
+charge_led = { pin = "P1_13", low_active = false }
